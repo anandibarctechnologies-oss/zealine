@@ -6,9 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+</style>
 
+<!-- Font Awesome (Added for Social Icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
 :root {
   --primary-blue: #002366;
   --bright-blue: #2563EB;
@@ -395,6 +402,34 @@ footer strong {
   letter-spacing: 1px;
 }
 
+/* Added Styles for Social Icons */
+.social-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  background: var(--accent-red);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+}
+
 /* --- RESPONSIVE --- */
 @media(max-width:768px){
   header { padding: 15px 5%; flex-direction: column; gap: 15px; }
@@ -417,7 +452,7 @@ footer strong {
 <!-- HEADER -->
 <header>
   <a href="#home" class="logo-container">
-    <img src="LOGO.png" alt="Zealine Logo" class="logo-img">
+    <img src="images/logo.png" alt="Zealine Logo" class="logo-img">
   </a>
   <nav>
     <a href="#home">Home</a>
@@ -544,7 +579,15 @@ footer strong {
 <footer>
   <strong>ZEALINE LOGISTICS</strong>
   <p>Excellence in Motion.</p>
-  <br>
+
+  <!-- Social Media Icons Section -->
+  <div class="social-links">
+    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/anandibarctechnologies2026/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
   <p>© 2025 IBARC TECHNOLGIES</p>
 </footer>
 
@@ -569,6 +612,4 @@ footer strong {
 </script>
 
 </body>
-
 </html>
-
